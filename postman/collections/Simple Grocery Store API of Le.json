@@ -75,6 +75,42 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "New Request",
+			"id": "ccf6f06d-0cd9-48e3-9c6a-c33420741bac",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/books/lists?api-key=8fhg93xkjd38fhg834jdfgjd&list=non-fiction&page=3",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"books",
+						"lists"
+					],
+					"query": [
+						{
+							"key": "api-key",
+							"value": "8fhg93xkjd38fhg834jdfgjd"
+						},
+						{
+							"key": "list",
+							"value": "non-fiction"
+						},
+						{
+							"key": "page",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	],
 	"event": [

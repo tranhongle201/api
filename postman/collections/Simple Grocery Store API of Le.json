@@ -111,6 +111,41 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "req 2",
+			"id": "c98b564a-b02e-40c5-8326-fb4bf0c30d9f",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/products?category={{category}}&results={{grocery/results}}&available={{grocery.available}}",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"products"
+					],
+					"query": [
+						{
+							"key": "category",
+							"value": "{{category}}"
+						},
+						{
+							"key": "results",
+							"value": "{{grocery/results}}"
+						},
+						{
+							"key": "available",
+							"value": "{{grocery.available}}"
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	],
 	"event": [

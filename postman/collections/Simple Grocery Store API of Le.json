@@ -111,6 +111,77 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "req 2",
+			"id": "c98b564a-b02e-40c5-8326-fb4bf0c30d9f",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/products?category={{category}}&results={{grocery/results}}&available={{grocery.available}}",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"products"
+					],
+					"query": [
+						{
+							"key": "category",
+							"value": "{{category}}"
+						},
+						{
+							"key": "results",
+							"value": "{{grocery/results}}"
+						},
+						{
+							"key": "available",
+							"value": "{{grocery.available}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request 4",
+			"id": "c349186a-1ad5-405f-9a4e-b500a844432f",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/books/lists?api-key=8fhg93xkjd38fhg834jdfgjd&list=non-fiction&page=3",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"books",
+						"lists"
+					],
+					"query": [
+						{
+							"key": "api-key",
+							"value": "8fhg93xkjd38fhg834jdfgjd"
+						},
+						{
+							"key": "list",
+							"value": "non-fiction"
+						},
+						{
+							"key": "page",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	],
 	"event": [

@@ -9,7 +9,7 @@ id = bacd542d-f015-459d-a480-2c79e05a4f68
 
 [config.relations.collections]
 rootDirectory = postman/collections
-files[] = {"id":"27462420-0ea9b6c7-06d3-4fec-afa7-dc3a36e68ed4","path":"Valentine's Book Copy.json","metaData":{}}
+files[] = {"id":"27462420-5caecc5a-1d11-4432-91c1-27785f4d97b6","path":"Le Colection API Copy.json","metaData":{}}
 
 [config.relations.collections.metaData]
 

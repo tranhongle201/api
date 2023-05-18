@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "5caecc5a-1d11-4432-91c1-27785f4d97b6",
+		"name": "Le Colection API Copy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "27462420-5caecc5a-1d11-4432-91c1-27785f4d97b6"
+	},
+	"item": [
+		{
+			"name": "Valentine's Book List API",
+			"id": "55fe0442-9df9-473f-967c-d7888cc97021",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}",
+					"host": [
+						"{{URL}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all products",
+			"id": "4eca915d-d5ad-42f3-be75-50f1dd2b0bfa",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/products?category={{category}}&results={{grocery.results}}&available={{grocery.available}}",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"products"
+					],
+					"query": [
+						{
+							"key": "category",
+							"value": "{{category}}"
+						},
+						{
+							"key": "results",
+							"value": "{{grocery.results}}"
+						},
+						{
+							"key": "available",
+							"value": "{{grocery.available}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get a product Copy",
+			"id": "6b3f2191-90b3-4fea-b7d1-cb0d291d5375",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/products/?productId=coffee&product-label={{false}}",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"products",
+						""
+					],
+					"query": [
+						{
+							"key": "productId",
+							"value": "coffee"
+						},
+						{
+							"key": "product-label",
+							"value": "{{false}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"id": "52c038e5-d860-4624-9e72-679c6cfeb52b",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/books/lists?api-key=8fhg93xkjd38fhg834jdfgjd&list=non-fiction&page=3",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"books",
+						"lists"
+					],
+					"query": [
+						{
+							"key": "api-key",
+							"value": "8fhg93xkjd38fhg834jdfgjd"
+						},
+						{
+							"key": "list",
+							"value": "non-fiction"
+						},
+						{
+							"key": "page",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,135 @@
+{
+	"info": {
+		"_postman_id": "166fae06-b43f-4bb6-8ca9-3494f7e5dc4c",
+		"name": "Simple Grocery Store API of Le",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "27462420-166fae06-b43f-4bb6-8ca9-3494f7e5dc4c"
+	},
+	"item": [
+		{
+			"name": "get Status",
+			"id": "06ac8843-d72f-4f01-8232-17c19484f074",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://simple-grocery-store-api.online/status",
+					"protocol": "http",
+					"host": [
+						"simple-grocery-store-api",
+						"online"
+					],
+					"path": [
+						"status"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all products",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "6b18ccc2-a601-4428-bf1b-2d9b87d4dde7",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "7b8b255a-19da-462f-a0be-18a18333c106",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/products?category={{category}}&results={{grocery/results}}&available={{grocery.available}}",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"products"
+					],
+					"query": [
+						{
+							"key": "category",
+							"value": "{{category}}"
+						},
+						{
+							"key": "results",
+							"value": "{{grocery/results}}"
+						},
+						{
+							"key": "available",
+							"value": "{{grocery.available}}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "a06db280-6d95-4459-b44e-b9485ac12a7d",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "f2f0c011-a414-444c-9b88-94cc6612300c",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "058a46a1-b88f-443a-a082-6f55a0e3bf08",
+			"key": "category",
+			"value": "coffee",
+			"type": "string"
+		},
+		{
+			"id": "c183b5cf-5703-45bb-b132-7cdae627ba3b",
+			"key": "results",
+			"value": "10",
+			"type": "string"
+		},
+		{
+			"id": "bbfc8ae9-46cc-4397-8f36-428f9dce49f3",
+			"key": "available",
+			"value": "false",
+			"type": "string"
+		},
+		{
+			"id": "bc2e62b6-f9d1-495c-9efd-37f2e740b450",
+			"key": "add variable",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"id": "ea84b462-6e3e-4239-ab61-0fa682fb388d",
+			"key": "URL",
+			"value": "http://simple-grocery-store-api.online/",
+			"type": "string",
+			"disabled": true
+		}
+	]
+}

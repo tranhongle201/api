@@ -14,6 +14,7 @@ rootDirectory = postman/collections
 
 [config.relations.apiDefinition]
 rootDirectory = Books
+files[] = {"path":"index.yaml","metaData":{}}
 
 [config.relations.apiDefinition.metaData]
 type = openapi:3
